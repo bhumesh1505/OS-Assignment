@@ -1,0 +1,72 @@
+Assignment 7: MathFS
+Ryan Kadri, Nyambi Acho, Utkarsha Mavani, Austin Su
+
+Our MathFS program is broken into 3 files:
+	mathfs.c    mathfs.h    ops.c
+	
+These files deal with the following:
+	mathfs.c
+		Implementation file for the 4 implemented Fuse functions (mathfs_readdir, mathfs_open,
+		mathfs_read, mathfs_getattr). It also implements functions for parsing the path string
+		and initializing structures necessary to the operation of the MathFS system.
+		
+	mathfs.h
+		Header file that contains all includes and function prototypes. Sets global variables
+		that will be used later in the program. Also #defines some constants that will be used
+		later. Most of the comment documentation is in this file.
+		
+	ops.c
+		Implementation file for functions that do math operations. All of the base math functions
+		take the part of the path after the main directory as an input, parse it, and return a
+		string containing a numerical solution or an error message. These functions all can use
+		the parseOperation() function to split the input into doubles or ints. This functionality
+		allows for extension to other filesystem operations (even non-numeric ones) since the
+		user is free to parse this input string however he/she wants.
+		
+The logic in the main Fuse function goes as follows:
+	math_getattr:
+		This function calls the getFileType function to determine the type of file given in path.
+		If the path points to a directory, the function sets the permissions and number of links.
+		If the path points to a file, the function will set the permissions appropriately and set
+		the size based on either the size of the documentation or of the dynamically generated 
+		file depending on what is being called.
+	math_readdir:
+		This function fills the directory structure based on the path and the directory that is
+		being asked for. The root directory is filled with links to all of the main directories
+		(add, sub, etc.). Each main directory is filled with a link to doc and the default self
+		link and previous link. The dynamically generated directories (eg add/1/) only have the
+		default links.
+	math_open:
+		This function checks that the path points to a valid file and has correct permissions set.
+		If so, it is openable.
+	math_read:
+		This function checks to see if the path points to a valid file and then attempts to read
+		information in the file. If the file is a documentation file, the function reads the doc
+		string from the operation structure associated with the path (described below). Otherwise
+		the function calls the parse function for the appropriate operation structure.
+		
+	** The myOperations[] array of structures ties together information about the operations that
+	   can be performed by the file system. This setup may be cumbersome for a small number of
+	   files but the theory is that it can allow for a user to implement more operations without
+	   needing to change any other functions;
+
+How to add an operation:
+	Increment the NUMOPS macro, add a pathname to the paths[] variable, add a doc string to the
+	docs[] variable, add an entry to the numArgs[] array, and define a new function that follows
+	the prototype of the other operation functions. You will also need to manually add the function
+	pointer to the loadOperations function. This is unfortunate but we weren't sure how to use
+	arrays of function pointers in the same way as the other arrays. If we got this to work, the 
+	user would simply add a pointer to their operation function to this array.
+	
+Other important information:
+	ParseOperation:
+		This function takes an input of the form /a/b or /a and parses the ints or doubles into
+		the inInts or inDoubles array. It also returns the number of ints or doubles parsed from
+		the string and whether the numbers should be treated as ints or doubles.
+	Macros:
+		These macros define "file types". They are returned by the getFileType function
+		INVALID - Path to file or directory doesn't exist
+		PATH_DIR_HARD 	- This indicates a main directory (/add, /sub, etc.)
+		PATH_FILE_HARD 	- This indicates a documentation file 
+		PATH_DIR_SOFT	- This indicates a dynamically created directory (add/1)
+		PATH_FILE_SOFT 	- This indicates a dynamically created file (add/1/2)

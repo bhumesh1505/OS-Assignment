@@ -1,0 +1,1843 @@
+
+bb_init()
+    conn:
+    proto_major = 7
+    proto_minor = 26
+    async_read = 1
+    max_write = 131072
+    max_readahead = 131072
+    capable = 00000ffb
+    want = 00000010
+    max_background = 0
+    congestion_threshold = 0
+    context:
+    fuse = c821e890
+    uid = 0
+    gid = 0
+    pid = 0
+    private_data = c821d260
+    logfile = c821e290
+    rootdir = /root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir
+    umask = 00000
+
+bb_access(path="/", mask=04)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_getattr(path="/.Trash", statbuf=0xb5681c40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/.Trash", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/.Trash"
+    lstat returned -1
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/", statbuf=0xb4e5ec10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_getattr(path="/BDMV", statbuf=0xb5ea4c40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/BDMV", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/BDMV"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.xdg-volume-info", statbuf=0xb5681c40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/.xdg-volume-info", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/.xdg-volume-info"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/autorun.inf", statbuf=0xb4e5ec40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/autorun.inf", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/autorun.inf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.Trash-0", statbuf=0xb5ea4c40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/.Trash-0", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/.Trash-0"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_readdir(path="/", buf=0xb00020f0, filler=0xb6094b80, offset=0, fi=0xb5681c30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/bogus.txt", statbuf=0xb5ea4c40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 268004
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ba8d154
+    st_mtime = 0x5baa2235
+    st_ctime = 0x5baa2235
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a3f0, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a500, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a580, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a600, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a680, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a700, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a780, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a800, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a780, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a800, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a780, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+    opendir returned 0x0x7fb0b000a880
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b000a880
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a800, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b000a8b0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b000a880
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b000a880
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b000a880
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b000a880
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a780, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a800, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+    opendir returned 0x0x7fb0b000a880
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b000a880
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a780, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b000a8b0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b000a880
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b000a880
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b000a880
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b000a880
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a800, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a780, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a800, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a780, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a800, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a780, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb5ea4c30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0b0002170
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_readdir(path="/", buf=0xb000a780, filler=0xb6094b80, offset=0, fi=0xb4e5ec30)
+    readdir returned 0x0x7fb0b00021a0
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xb4e5ec40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0b0002170
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0b0002170
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/autorun.inf", statbuf=0xb5ea4c40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/autorun.inf", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/autorun.inf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_opendir(path="/", fi=0xb4e5ec30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0ac0010f0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0ac0010f0
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=02)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_getattr(path="/.Trash", statbuf=0xb5681c40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/.Trash", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/.Trash"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.Trash-0", statbuf=0xb4e5ec40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/.Trash-0", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/.Trash-0"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_access(path="/", mask=02)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_readdir(path="/", buf=0xb000a700, filler=0xb6094b80, offset=0, fi=0xb5681c30)
+    readdir returned 0x0x7fb0ac001120
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0ac0010f0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0ac0010f0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/bogus.txt", statbuf=0xb5ea4c40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 268004
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ba8d154
+    st_mtime = 0x5baa2235
+    st_ctime = 0x5baa2235
+
+bb_getattr(path="/.hidden", statbuf=0xb5681c40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/.hidden", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/.hidden"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_access(path="/bogus.txt", mask=04)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+
+bb_access(path="/bogus.txt", mask=02)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+
+bb_access(path="/bogus.txt", mask=01)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    ERROR bb_access access: Permission denied
+
+bb_getattr(path="/", statbuf=0xb4e5ec10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_releasedir(path="/", fi=0xb5681c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0ac0010f0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0ac0010f0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/bogus.txt", statbuf=0xb4e5ec40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 268004
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5ba8d154
+    st_mtime = 0x5baa2235
+    st_ctime = 0x5baa2235
+
+bb_getattr(path="/", statbuf=0xb5ea4c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_open(path"/bogus.txt", fi=0xb5681cf0)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    open returned 5
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xb4e5ec30)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7fb0ac0010f0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0ac0010f0
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/bogus.txt", mask=02)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+
+bb_readdir(path="/", buf=0xb000a680, filler=0xb6094b80, offset=0, fi=0xb5681c30)
+    readdir returned 0x0x7fb0ac001120
+calling filler with name bogus.txt
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0ac0010f0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0ac0010f0
+    lock_owner = 0x0000000000000000
+
+bb_read(path="/bogus.txt", buf=0xb00021c0, size=4096, offset=0, fi=0xb5ea4cf0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/.hidden", statbuf=0xb5681c40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/.hidden", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/.hidden"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_releasedir(path="/", fi=0xb5681c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fb0ac0010f0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fb0ac0010f0
+    lock_owner = 0x0000000000000000
+    pread returned 11
+
+bb_getattr(path="/bogus.txt", statbuf=0xb4e5ec10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 268004
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa2245
+    st_mtime = 0x5baa2235
+    st_ctime = 0x5baa2235
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_flush(path="/bogus.txt", fi=0xb5ea4cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x71a13a2beba8b896
+
+bb_release(path="/bogus.txt", fi=0xb4e5ecf0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_access(path="/bogus.txt", mask=02)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+
+bb_access(path="/bogus.txt", mask=02)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+
+bb_getattr(path="/bogus.txt", statbuf=0xb4e5ec40)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 268004
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa2245
+    st_mtime = 0x5baa2235
+    st_ctime = 0x5baa2235
+
+bb_access(path="/bogus.txt", mask=02)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+
+bb_getattr(path="/", statbuf=0xb5ea4c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_getattr(path="/", statbuf=0xb4e5ec10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_access(path="/", mask=04)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=02)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_getattr(path="/", statbuf=0xb5681c10)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2054
+    st_ino = 264979
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5baa13b7
+    st_mtime = 0x5ba677f9
+    st_ctime = 0x5ba677f9
+
+bb_statfs(path="/", statv=0xb5ea4bf0)
+    bb_fullpath:  rootdir = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/root/Desktop/OSLab/Assignment 3/fuse-tutorial/fuse-tutorial-2018-02-04/example/rootdir/"
+    statvfs returned 0
+    sv:
+    f_bsize = 4096
+    f_frsize = 4096
+    f_blocks = 13519692
+    f_bfree = 8409473
+    f_bavail = 7715265
+    f_files = 3457024
+    f_ffree = 2977795
+    f_favail = 2977795
+    f_fsid = 2802140612901385757
+    f_flag = 0x00001000
+    f_namemax = 255
+
+bb_destroy(userdata=0xc821d260)
