@@ -228,7 +228,20 @@ int main(int argc, char const *argv[])
 			{
 				processes[minBurstTimeIndex].completionTime = timeSpend;
 				processes[minBurstTimeIndex].turnAroundTime = processes[minBurstTimeIndex].completionTime - processes[minBurstTimeIndex].arrival_Time;
+				
+				minBurstTimeIndex = waiting_list[0] ;
+				int minBurstTime = INT_MAX;
 				minBurstTimeAvailable = false;
+				for (int i = 0; i < waiting_list.size() ; ++i)
+				{
+					k = waiting_list[i];
+			    	if( minBurstTime >= processes[k].CPU_Burst_Time && processes[k].isInIO == false && processes[k].CPU_Burst_Time > 0 )
+			    	{
+			    		minBurstTimeIndex = k;
+			    		minBurstTime = processes[k].CPU_Burst_Time;
+			    		minBurstTimeAvailable = true;
+			    	}
+				}
 			}
 	    	else if( processes[minBurstTimeIndex].CPU_burst_time_temp == 0 )
 	    	{
@@ -256,21 +269,7 @@ int main(int argc, char const *argv[])
 			string s;
 			s = "<"+ to_string(timeSpend) +  "--->";
 	    	ganttChartBurst.push_back(s);	
-
-			minBurstTimeIndex = waiting_list[0] ;
-			int minBurstTime = INT_MAX;
-			minBurstTimeAvailable = false;
-			for (int i = 0; i < waiting_list.size() ; ++i)
-			{
-				k = waiting_list[i];
-		    	if( minBurstTime >= processes[k].CPU_Burst_Time && processes[k].isInIO == false && processes[k].CPU_Burst_Time > 0 )
-		    	{
-		    		minBurstTimeIndex = k;
-		    		minBurstTime = processes[k].CPU_Burst_Time;
-		    		minBurstTimeAvailable = true;
-		    	}
-			}
-		
+				
 		}
 
     	timeSpend++;    	
@@ -284,13 +283,29 @@ int main(int argc, char const *argv[])
 		    }
 			k++;
 		}
+		if( !minBurstTimeAvailable )
+		{
+			minBurstTimeIndex = waiting_list[0] ;
+			int minBurstTime = INT_MAX;
+			minBurstTimeAvailable = false;
+			for (int i = 0; i < waiting_list.size() ; ++i)
+			{
+				k = waiting_list[i];
+		    	if( minBurstTime >= processes[k].CPU_Burst_Time && processes[k].isInIO == false && processes[k].CPU_Burst_Time > 0 )
+		    	{
+		    		minBurstTimeIndex = k;
+		    		minBurstTime = processes[k].CPU_Burst_Time;
+		    		minBurstTimeAvailable = true;
+		    	}
+			}
+		}
     }
     
     cout << endl << endl ;
-    cout << "arrival_Time , CPU Burst time , IO_burst_time , CPU_burst_time_interval , completionTime , waitingTime , turnAroundTime " << endl ;
+    cout << "processNumber , arrival_Time , CPU Burst time , IO_burst_time , CPU_burst_time_interval , completionTime , waitingTime , turnAroundTime " << endl ;
     for (int i = 0; i < n; ++i)
     {
-    	cout <<processes[i].processNumber << "\t" << processes[i].arrival_Time << "\t" << processes[i].CPU_Burst_Time_original << "\t" << processes[i].IO_burst_time << "\t" << processes[i].CPU_burst_time_interval << "\t" << processes[i].completionTime << "\t" << processes[i].waitingTime << "\t" << processes[i].turnAroundTime << endl;
+    	cout <<processes[i].processNumber << "\t\t" << processes[i].arrival_Time << "\t\t" << processes[i].CPU_Burst_Time_original << "\t\t" << processes[i].IO_burst_time << "\t\t" << processes[i].CPU_burst_time_interval << "\t\t" << processes[i].completionTime << "\t\t" << processes[i].waitingTime << "\t\t" << processes[i].turnAroundTime << endl;
     }
     cout << endl << endl ;
     cout << "CPU BURST : " ;
