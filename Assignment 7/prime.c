@@ -37,14 +37,15 @@ int main ()
   int which_prime ;
   printf("Enter n");
   scanf("%d",&which_prime);
+  int temp = which_prime;
   int prime;
 
-  /* Start the computing thread, up to the 5000th prime number.  */
+  /* Start the computing thread, up to the nth prime number.  */
   pthread_create (&thread, NULL, &compute_prime, &which_prime);
   /* Do some other work here...  */
   /* Wait for the prime number thread to complete, and get the result.  */
   pthread_join (thread, (void*) &prime);
   /* Print the largest prime it computed.  */
-  printf("The %dth prime number is %d.\n", which_prime, prime);
+  printf("The %dth prime number is %d.\n", temp, prime);
   return 0;
 }

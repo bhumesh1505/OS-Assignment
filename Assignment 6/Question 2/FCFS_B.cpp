@@ -203,7 +203,7 @@ int main(int argc, char const *argv[])
 			if( processes[prc].CPU_Burst_Time == 0 )	// process completed
 			{
 				processes[prc].completionTime = timeSpend;
-				processes[prc].turnAroundTime = processes[prc].completionTime - processes[prc].arrival_Time;
+				processes[prc].turnAroundTime = processes[prc].completionTime - processes[prc].arrival_Time + 1;
 	    		waiting_queue.pop();
 		    	processes[prc].isInCPU = false;
 	    	}

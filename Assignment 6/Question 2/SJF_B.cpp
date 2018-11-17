@@ -57,7 +57,7 @@ bool done( vector <process> &processes )
 	}
 	return true;
 }
-string to_string(int n)
+/*string to_string(int n)
 {
     stringstream ss;
     ss << n;
@@ -70,7 +70,7 @@ int stoi(string s)
     istringstream text_stream(s);
     text_stream >> value;
     return value;
-}
+}*/
 int getInput(vector <process> &processes)
 {
     string line;
@@ -227,7 +227,7 @@ int main(int argc, char const *argv[])
 			if( processes[minBurstTimeIndex].CPU_Burst_Time == 0 )	// process completed
 			{
 				processes[minBurstTimeIndex].completionTime = timeSpend;
-				processes[minBurstTimeIndex].turnAroundTime = processes[minBurstTimeIndex].completionTime - processes[minBurstTimeIndex].arrival_Time;
+				processes[minBurstTimeIndex].turnAroundTime = processes[minBurstTimeIndex].completionTime - processes[minBurstTimeIndex].arrival_Time + 1;
 				
 				minBurstTimeIndex = waiting_list[0] ;
 				int minBurstTime = INT_MAX;
